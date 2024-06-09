@@ -1,0 +1,441 @@
+:root {
+    --main-bg: rgb(14, 127, 67);
+    --main-header: white;
+    --main-color: white;
+}
+.show{
+    transform: translateX(0)!important;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(9, 65, 100) #FFFFFF;
+    font-size: 14px;
+
+}
+
+/* tuong thich tren dien thoai  */
+@media screen and (max-width: 767px) {}
+
+/* phan dau trang  */
+header {
+    width: 100%;
+    height: 50px;
+    size: 13px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    background-color: rgb(13, 53, 78);
+    /* them thuoc tinh nay de dinh ko bi keo theo trang  */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+header nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    padding: 17px;
+}
+
+header nav a:hover {
+    background-color: #ecf0f1;
+    color: #c12030;
+    font-weight: bold;
+}
+header nav .menu-img{
+    display: none;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+}
+header nav .menu-img img{
+    width: 40px;
+}
+h1 {
+    margin-top: 10px;
+    color: red;
+}
+
+h1 span {
+    color: white;
+}
+/* Menu */
+
+header .menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 1000px;
+    background-color: #999;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+header .menu ul{
+    padding-left: 50px;
+}
+header .menu ul li{
+    color: white;
+    text-transform: uppercase;
+    list-style: none;
+    padding-top: 50px;
+    font-size: 20px;
+}
+/* chan trang  */
+footer {
+    width: 100%;
+    line-height: 70px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+    background-color: rgb(65, 79, 92);
+    color: white;
+}
+
+/* phan than giua  */
+main {
+    box-shadow: 0px 0px 5px 5px #999;
+    display: flex;
+    margin: auto;
+    width: 1200px;
+    max-width: 100%;
+    padding: 0px;
+    margin-top: 70px;
+    /* khoang cach tren container */
+    margin-bottom: 70px;
+    /* khoang cach duoi container */
+}
+
+/* -------phan ben trai cua CV-----------  */
+.left {
+    background-color: var(--main-bg);
+    width: 30%;
+}
+
+/* avatar  */
+.left .avatar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.avatar img {
+    width: 250px;
+    height: 250px;
+    border: 8px solid #006266;
+    border-radius: 50%;
+}
+
+.avatar h2 {
+    padding: 10px 0;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: white;
+}
+
+.avatar h3 {
+    font-size: 12px;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 7px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    color: white;
+    margin-top: 10px;
+
+}
+
+.info {
+    margin-top: 50px;
+}
+
+.info h2 {
+    width: 250px;
+    margin: 0 auto;
+    padding: 7px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    color: white;
+    margin-top: 10px;
+}
+
+.info1 {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 150px;
+    display: flex;
+
+}
+
+.info-mini {
+    color: white;
+}
+
+.info1 img {
+    margin-top: 15px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 6px;
+    margin-right: 10px;
+    float: left;
+    background-color: white;
+}
+
+.social {
+    margin-top: 50px;
+}
+
+.social h2 {
+    width: 250px;
+    margin: 0 auto;
+    padding: 7px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    color: white;
+    margin-top: 10px;
+}
+
+.title-left {
+    color: white;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+    line-height: 14px;
+}
+
+.title {
+    padding: 2px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    color: black;
+    margin-left: 50px;
+    line-height: 30px;
+    width: 700px;
+}
+
+.objective img {
+    background: #3d3f42;
+    width: 36px;
+    padding: 7px;
+    border-radius: 50%;
+    float: left;
+}
+
+.objective {
+    margin-top: 90px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    margin-right: 60px;
+}
+
+.objective p {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 35px;
+}
+
+.experience img {
+    background: #3d3f42;
+    width: 36px;
+    padding: 7px;
+    border-radius: 50%;
+    float: left;
+}
+
+.experience {
+    margin-top: 90px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    margin-right: 50px;
+}
+
+.alldiv {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 35px;
+}
+
+.divfor1and2 {
+    display: flex;
+}
+
+.ex1 {
+    width: 300px;
+}
+
+.divfor3and4 {
+    margin-top: 30px;
+    display: flex;
+}
+
+.ex3 {
+    width: 240px;
+}
+
+.ex1 p {
+    padding-left: 25px;
+}
+
+.ex3 p {
+    padding-left: 25px;
+}
+
+.education img {
+    background: #3d3f42;
+    width: 36px;
+    padding: 7px;
+    border-radius: 50%;
+    float: left;
+}
+
+.education {
+    margin-top: 90px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+.table {
+    margin-top: 20px;
+    border-bottom: #040404;
+    width: 750px;
+}
+
+.year {
+    padding-right: 50px;
+}
+
+.school {
+    padding-right: 150px;
+}
+
+th {
+    text-align: left;
+    background-color: var(--main-bg);
+    color: white;
+    font-family: '', sans-serif;
+    font-size: 25px;
+
+}
+
+.skill img {
+    background: #3d3f42;
+    width: 36px;
+    padding: 7px;
+    border-radius: 50%;
+    float: left;
+}
+
+.skill {
+    margin-top: 90px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+.p1 progress {
+    width: 80%;
+    background-color: #333;
+    border-radius: 13px;
+    height: 8px;
+}
+
+.progress {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 50px 50px;
+}
+#phone,
+#email,
+#lastname,
+#firstname{
+    padding-left: 20px;
+}
+.contact .firstname-input,
+.contact .phone-input,
+.contact .email-input,
+.contact .lastname-input{
+    position: relative;
+}
+.contact .firstname-input img,
+.contact .phone-input img,
+.contact .email-input img,
+.contact .lastname-input img{
+    background-color: #fff;
+    position: absolute;
+    top: 19px;
+    left: 3px;
+    width: 16px;
+    border-radius: 0;
+    padding: 0;
+}
+
+
+
+.heading img {
+    background: #3d3f42;
+    width: 36px;
+    padding: 7px;
+    border-radius: 50%;
+    float: left;
+}
+
+.hobby {
+    margin-top: 90px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+.imagehobby {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 170px 170px 170px 170px 170px;
+}
+
+.contact img {
+    background: #3d3f42;
+    width: 36px;
+    padding: 7px;
+    border-radius: 50%;
+    float: left;
+}
+
+.contact {
+    margin-top: 90px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+#form {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 80px 80px;
+    margin-bottom: 50px;
+}
+
+.input input[type="text"] {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.content {
+    margin-top: 0px;
+}
+
+.button input[type="submit"] {
+    width: 750px;
+    height: 40px;
+    background-color: rgb(118, 225, 118);
+}

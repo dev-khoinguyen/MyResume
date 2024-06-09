@@ -1,0 +1,108 @@
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    main {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .info1 {
+        justify-content: center;
+    }
+
+    header nav .menu-img {
+        display: flex;
+        margin-top: 5px;
+    }
+
+    header nav a {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    main {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .info1 {
+        justify-content: center;
+    }
+
+    header nav .menu-img {
+        display: flex;
+        margin-top: 5px;
+    }
+
+    header nav a {
+        display: none;
+    }
+
+    .contact,
+    .hobby,
+    .skill,
+    .education,
+    .experience,
+    .objective {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .table {
+        width: 100%;
+    }
+
+    .objective p {
+        margin-right: 0;
+    }
+
+    .alldiv {
+        margin-right: 2%;
+    }
+
+    .progress {
+        display: block;
+    }
+
+    .title {
+        width: 80%;
+    }
+
+    th {
+        font-size: 14px;
+    }
+
+    td {
+        font-size: 10px;
+    }
+
+    .imagehobby {
+        display: block;
+    }
+
+    .imagehobby img {
+        padding: 10px;
+    }
+
+    .form {
+        grid-template-columns: auto;
+        grid-template-rows: 80px 80px 80px 80px;
+    }
+    .content{
+        width: 100%;
+    }
+    #message{
+        width: 100%;
+    }
+    .button input[type="submit"]{
+        width: 100%;
+    }
+    footer{
+        font-size: 15px;
+    }
+}
